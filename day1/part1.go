@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/RonaldEAM/aoc-2022/inputHelper"
 	"log"
 	"strconv"
 	"strings"
@@ -10,7 +11,7 @@ func getMostCalories() int {
 	elfSum := 0
 	maxCalories := 0
 
-	processInputByLine("./input.txt", func(line string) {
+	inputHelper.ProcessByLine("./input.txt", func(line string) {
 		value := strings.TrimSpace(line)
 
 		if value == "" {

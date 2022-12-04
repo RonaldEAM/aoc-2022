@@ -21,15 +21,11 @@ func main() {
 
 	switch step {
 	case 1:
-		mostCalories := getMostCalories()
-		fmt.Printf("The elf carrying the most calories is carrying %d calories\n", mostCalories)
+		totalScore := calculateScore()
+		fmt.Printf("Total score is %d\n", totalScore)
 	case 2:
-		topThreeCalories := getTopThreeCalories()
-		total := 0
-		for _, calories := range topThreeCalories {
-			total += calories
-		}
-		fmt.Printf("The top three elves carrying the most calories are carrying %v\nTotal: %d\n", topThreeCalories, total)
+		totalScore := calculateScore2()
+		fmt.Printf("Total score is %d\n", totalScore)
 	default:
 		fmt.Println("This step is not valid")
 		os.Exit(1)

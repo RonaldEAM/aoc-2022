@@ -1,4 +1,4 @@
-package main
+package inputHelper
 
 import (
 	"bufio"
@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func processInputByLine(filename string, cb func(string)) {
+func ProcessByLine(filename string, cb func(string)) {
 	file, err := os.Open(filename)
 	if err != nil {
 		log.Fatal(err)
