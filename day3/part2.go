@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/RonaldEAM/aoc-2022/inputHelper"
+	"github.com/RonaldEAM/aoc-2022/inputhelper"
 	"strings"
 )
 
@@ -11,7 +11,7 @@ func getGroupPrioritiesSum() int {
 	currCharMap := map[rune]int{}
 	i := 1
 
-	inputHelper.ProcessByLine("./input.txt", func(line string) {
+	inputhelper.ProcessByLine("./input.txt", func(line string) {
 		var groupSharedItem rune
 		var seenInLine [52]bool
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/RonaldEAM/aoc-2022/inputHelper"
+	"github.com/RonaldEAM/aoc-2022/inputhelper"
 	"strings"
 )
 
@@ -9,7 +9,7 @@ func getPrioritiesSum() int {
 	totalSum := 0
 	getCharValue := buildCharValues()
 
-	inputHelper.ProcessByLine("./input.txt", func(line string) {
+	inputhelper.ProcessByLine("./input.txt", func(line string) {
 		value := strings.TrimSpace(line)
 		half := len(value) / 2
 		currCharMap := map[rune]int{}

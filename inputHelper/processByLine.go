@@ -1,4 +1,4 @@
-package inputHelper
+package inputhelper
 
 import (
 	"bufio"

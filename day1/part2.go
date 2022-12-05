@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/RonaldEAM/aoc-2022/inputHelper"
+	"github.com/RonaldEAM/aoc-2022/inputhelper"
 	"github.com/emirpasic/gods/trees/binaryheap"
 	"github.com/emirpasic/gods/utils"
 	"log"
@@ -17,7 +17,7 @@ func getTopThreeCalories() []int {
 
 	elfSum := 0
 
-	inputHelper.ProcessByLine("./input.txt", func(line string) {
+	inputhelper.ProcessByLine("./input.txt", func(line string) {
 		value := strings.TrimSpace(line)
 
 		if value == "" {

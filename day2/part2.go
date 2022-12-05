@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/RonaldEAM/aoc-2022/inputHelper"
+	"github.com/RonaldEAM/aoc-2022/inputhelper"
 )
 
 func calculateScore2() int {
@@ -25,7 +25,7 @@ func calculateScore2() int {
 	}
 	totalScore := 0
 
-	inputHelper.ProcessByLine("./input.txt", func(line string) {
+	inputhelper.ProcessByLine("./input.txt", func(line string) {
 		opponentHand, neededResult := getTurnChoices(line)
 
 		currRoundScore := roundResultPoints[neededResult]
